@@ -1,0 +1,81 @@
+export type ProductsOrders = {
+  id: number;
+  status: number;
+  quantity: number;
+  payment_method: number;
+  product: {
+    id: number;
+    name: string;
+    description: string;
+    price: string;
+    shippingPrice: string;
+    status: number;
+    from_address: string;
+    to_address: string;
+    quantity: number;
+    baseImage: string;
+    cat: {
+      id: number;
+      name: string;
+      image: string;
+      status: number;
+      name_ar: string;
+      name_en: string;
+    };
+    driver: {
+      id: number;
+      name: string;
+      phone: string;
+      email: string;
+      status: number;
+      type: number;
+      number_of_purchases: number;
+      isCompletedDriverInformation: number;
+      image: string;
+      firebase: string | null;
+      msgCode: number;
+      token: string | null;
+      driverInformation: unknown | null;
+      country: {
+        id: number;
+        name: string;
+        icon: string;
+        status: number;
+        countryCode: string;
+        name_ar: string;
+        name_en: string;
+      };
+    };
+    name_ar: string;
+    name_en: string;
+    description_ar: string;
+    description_en: string;
+  };
+  user: {
+    id: number;
+    name: string;
+    phone: string;
+    email: string;
+    status: number;
+    type: number;
+    number_of_purchases: number;
+    isCompletedDriverInformation: number;
+    image: string;
+    firebase: string | null;
+    msgCode: number;
+    token: string | null;
+    driverInformation: unknown | null;
+    country: {
+      id: number;
+      name: string;
+      icon: string;
+      status: number;
+      countryCode: string;
+      name_ar: string;
+      name_en: string;
+    };
+  };
+  productPrice: string;
+  shippingPrice: string;
+  finalPrice: string;
+};

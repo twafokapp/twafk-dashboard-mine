@@ -1,0 +1,56 @@
+[
+  {
+    "product_name": "Bluetooth Speaker",
+    "category": "Electronics",
+    "expected_date": "2023-08-15",
+    "amount": 75,
+    "price": 50.0,
+    "procedure": "Edit",
+    "id": 1
+  },
+  {
+    "product_name": "Laptop",
+    "category": "Electronics",
+    "expected_date": "2024-08-15",
+    "amount": 75,
+    "price": 1000.0,
+    "procedure": "Edit",
+    "id": 2
+  },
+  {
+    "product_name": "Bluetooth Headphonesssssssssssss",
+    "category": "Electronicssssssssssssssssssssssssss",
+    "expected_date": "2025-08-15",
+    "amount": 2,
+    "price": 100000.0,
+    "procedure": "Edit",
+    "id": 3
+  },
+  {
+    "product_name": "Smartphone",
+    "category": "Electronics",
+    "expected_date": "2026-08-15",
+    "amount": 5,
+    "price": 800.0,
+    "procedure": "Edit",
+    "id": 4
+  },
+  {
+    "product_name": "Smartwatch",
+    "category": "Electronics",
+    "expected_date": "2027-08-15",
+    "amount": 10,
+    "price": 200.0,
+    "procedure": "Edit",
+    "id": 5
+  },
+  {
+    "product_name": "Wireless Mouse",
+    "category": "Electronics",
+    "expected_date": "2028-08-15",
+    "amount": 20,
+    "price": 25.0,
+    "procedure": "Edit",
+    "id": 6
+  }
+]

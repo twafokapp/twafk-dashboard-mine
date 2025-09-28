@@ -1,0 +1,9 @@
+export const CLIENTS_KEY = 'clients';
+export const SINGLE_CLIENT = 'singleClient';
+export const PRODUCTS_ORDERS = 'productsOrders';
+export const SHIPMENTS_KEY = 'shipments';
+export const PRODUCTS_KEY = 'PRODUCTS_KEY';
+export const PRODUCTS_MANAGEMENT_KEY = 'PRODUCTS_MANAGEMENT_KEY';
+export const CATEGORIES_KEY = 'CATEGORIES_KEY';
+export const CLASSIFICTIONS_KEY = 'CLASSIFICTIONS_KEY';
+export const DELIVERYMEN_KEY = 'DELIVERYMEN_KEY';

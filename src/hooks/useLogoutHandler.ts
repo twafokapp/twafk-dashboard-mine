@@ -1,0 +1,26 @@
+import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import { logOut } from '@/store/authSlice';
+import { appToast } from '@/lib/toast/toast';
+
+export const useLogoutHandler = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    try {
+      dispatch(logOut());
+
+      appToast({ type: 'success', message: 'تم تسجيل الخروج بنجاح!' });
+
+      navigate('/sign-in');
+    } catch (error) {
+      appToast({
+        type: 'error',
+        message: error instanceof Error ? error.message : 'حدث خطأ أثناء تسجيل الخروج.',
+      });
+    }
+  };
+
+  return { handleLogout };
+};
