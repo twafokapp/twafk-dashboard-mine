@@ -22,8 +22,8 @@
   --color-dark-gray: var(--dark-gray);
   --color-semidark-gray: var(--semidark-gray);
   --color-soft-teal: var(--soft-teal);
+  --color-primary-dark: var(--primary-dark);
   --color-primary: var(--primary);
-  --color-primary-dark: var(--primary);
   --color-primary-light: var(--primary-light);
 
   --color-header-table: rgba(1, 192, 170, 0.15);
@@ -50,13 +50,13 @@
 
   :root {
     --midnight: #303750;
-    --sidebar: #1f263e;
+    --sidebar: #fff;
 
     --primary: #2D4484;
     --primary-dark: #1E294D;
     --primary-light: #E3F5FF;
 
-    --sidebar-foreground: #f5f5f5;
+    --sidebar-foreground: #8A8C91;
     --link-forground: #f64e4b;
     --foreground: oklch(0 0 0);
     --gray: #787878;
@@ -93,6 +93,5 @@
 .active {
   position: relative;
   padding-inline-end: 10px;
-  border-inline-start: 10px solid rgba(1, 192, 170, 1);
   background-color: var(--color-onclick);
 }

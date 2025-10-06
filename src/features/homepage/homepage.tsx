@@ -1,55 +1,45 @@
 import { AppCards } from '@/common/appCard/appCards';
-import PositiveChart from '@/assets/imgs/PositiveChart.svg';
-import NegativeChart from '@/assets/imgs/NegativeChart.svg';
 import { useTranslation } from 'react-i18next';
 
 export const Homepage = () => {
   const { t } = useTranslation();
   return (
     <section className='flex mt-[66px] ml-[32px]'>
-      <div className='grid sm:grid-cols-1 xl:grid-cols-4 gap-5 ml-[123px] w-full'>
+      <div className='grid sm:grid-cols-1 xl:grid-cols-3 2xl:grid-cols-4 gap-5 ml-[123px] min-w-[70%] overflow-auto'>
         <AppCards
           title={t('homepage.total_number_of_employees')}
           resultAsNumber='100'
-          chart={PositiveChart}
         />
         <AppCards
-          title={t('homepage.number_of_sold_products_today')}
+          title={t('homepage.total_attendants_today')}
           resultAsNumber='5'
-          chart={PositiveChart}
         />
         <AppCards
-          title={t('homepage.number_of_sold_products')}
+          title={t('homepage.late_attendants')}
           resultAsNumber='5'
-          chart={NegativeChart}
         />
         <AppCards
-          title={t('homepage.total_financial_payments')}
+          title={t('homepage.work_from_home')}
           resultAsNumber='5'
-          chart={PositiveChart}
         />
         <AppCards
-          title={t('homepage.total_added_products')}
+          title={t('homepage.number_of_male_employees')}
           resultAsNumber='80'
-          chart={PositiveChart}
         />
         <AppCards
-          title={t('homepage.number_of_deliverymen')}
+          title={t('homepage.number_of_female_employees')}
           resultAsNumber='20'
-          chart={PositiveChart}
         />
         <AppCards
-          title={t('homepage.number_of_deliverymen')}
+          title={t('homepage.total_tasks')}
           resultAsNumber='54'
-          chart={PositiveChart}
         />
         <AppCards
-          title={t('homepage.number_of_deliverymen')}
+          title={t('homepage.absents_today')}
           resultAsNumber='5'
-          chart={PositiveChart}
         />
       </div>
-      <div className='w-[250px] bg-red-300'>hello</div>
+      <div className='w-[250px] bg-red-300 '>hello</div>
     </section>
   );
 };

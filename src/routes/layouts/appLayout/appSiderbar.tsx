@@ -3,13 +3,10 @@
 // 1. Import useState, your new hook, and the dialog component
 import { useState } from 'react';
 import { useLogoutHandler } from '@/hooks/useLogoutHandler';
-// import { LogoutConfirmationDialog } from '@/components/auth/LogoutConfirmationDialog';
 
-import logoImg from '@/assets/imgs/logo.svg';
 import {
   Sidebar,
   SidebarGroupContent,
-  SidebarHeader,
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
@@ -63,9 +60,7 @@ export function AppSidebar() {
   return (
     // 3. Wrap the return in a fragment <> to include the dialog
     <>
-      <Sidebar side={i18n.language === 'ar' ? 'right' : 'left'}>
-        <img src={logoImg} className='w-1/2 pt-12 mx-auto' alt='logo' />
-        <SidebarHeader />
+      <Sidebar side={i18n.language === 'ar' ? 'right' : 'left'} className='right-28 top-16'>
         <SidebarGroupContent>
           <SidebarMenu className='gap-3'>
             {items.map(({ id, icon: Icon, title, url }) => {
