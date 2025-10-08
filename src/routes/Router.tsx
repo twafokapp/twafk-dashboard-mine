@@ -28,14 +28,14 @@ import { Products } from '@/features/products/products';
 import { EditClassification } from '@/features/products/editClassification/editClassification';
 import { AddNewProduct } from '@/features/products/addNewProduct/addNewProduct';
 import { AddNewCategory } from '@/features/products/addNewCategory/addNewCategory';
-import { ProtectedRoute } from './ProtectedRoute';
+// import { ProtectedRoute } from './ProtectedRoute';
 
 export const AppRouter = () => {
   return (
     <ErrorBoundaryRoutes>
       <Routes>
-        <Route path='/sign-in' element={<SignIn />} />
-        <Route element={<ProtectedRoute />}>
+        {/* <Route path='/sign-in' element={<SignIn />} /> */}
+        {/* <Route element={<ProtectedRoute />}> */}
           <Route path='/' element={<AppLayout />}>
             <Route index element={<Homepage />} />
             <Route path='deliverymen-logs' element={<DeliveryMenLogs />} />
@@ -80,7 +80,7 @@ export const AppRouter = () => {
             <Route path='reports/deliverymen_reports' element={<DeliveryMenReports />} />
             <Route path='reports/products_reports' element={<ProductsReports />} />
           </Route>
-        </Route>
+        {/* </Route> */}
       </Routes>
     </ErrorBoundaryRoutes>
   );
