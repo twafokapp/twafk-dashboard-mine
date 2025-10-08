@@ -59,7 +59,7 @@ export function AppSidebar() {
 
   return (
     // 3. Wrap the return in a fragment <> to include the dialog
-    <>
+    <div className='absolute z-5 '>
       <Sidebar side={i18n.language === 'ar' ? 'right' : 'left'} className='right-28 top-16'>
         <SidebarGroupContent>
           <SidebarMenu className='gap-3'>
@@ -113,6 +113,6 @@ export function AppSidebar() {
         onClose={() => setIsLogoutDialogOpen(false)}
         onConfirm={handleLogout}
       />
-    </>
+    </div>
   );
 }

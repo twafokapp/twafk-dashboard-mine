@@ -4,9 +4,7 @@ import { AppSidebar } from '@/routes/layouts/appLayout/appSiderbar';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Outlet } from 'react-router';
-import { Avatar, AvatarImage } from '@/components/ui/avatar';
-import ceo from '@/assets/imgs/ceo.svg';
-import { Bell, CircleAlert, Cog, Settings } from 'lucide-react';
+import { SidePanel } from './sidePanel';
 
 export function AppLayout() {
   const { i18n } = useTranslation();
@@ -44,20 +42,8 @@ export function AppLayout() {
   return (
     <SidebarProvider>
 
-      <div className=' bg-primary-dark '>
-        <div className=' mt-[45px] text-nowrap mx-5 '>
-          <Avatar className='rounded-full m-auto'>
-            <AvatarImage src={ceo} alt='@evilrabbit' />
-          </Avatar>
-          <h3 className='text-white font-bold text-base'>أحمد حسن</h3>
-        </div>
-        <Bell color='white' size={46} className='m-auto'/>
-
-
-      </div>
-      <div className='absolute z-5 '>
-          <AppSidebar />
-      </div>
+      <SidePanel />
+      <AppSidebar />
       <section className='w-full font-cairo text-center bg-[#f6f6f6] '>
         <div className='bg-white relative z-10 shadow-main h-[64px] flex items-center justify-between gap-5'>
           {/* <Navbar /> */}
