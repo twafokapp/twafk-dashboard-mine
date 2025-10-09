@@ -5,6 +5,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Outlet } from 'react-router';
 import { SidePanel } from './sidePanel';
+import { NewAppSidebar } from './newAppSiderbar';
 
 export function AppLayout() {
   const { i18n } = useTranslation();
@@ -43,7 +44,8 @@ export function AppLayout() {
     <SidebarProvider>
 
       <SidePanel />
-      <AppSidebar />
+      {/* <AppSidebar /> */}
+      <NewAppSidebar />
       <section className='w-full font-cairo text-center bg-[#f6f6f6] '>
         <div className='bg-white relative z-10 shadow-main h-[64px] flex items-center justify-between gap-5'>
           {/* <Navbar /> */}

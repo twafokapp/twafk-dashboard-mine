@@ -20,7 +20,7 @@ import { ProductsReports } from '@/features/productsReports/productsReports';
 import { SingleOrder } from '@/features/singleOrder/singleOrder';
 import { ShipmentDetails } from '@/features/shipmentDetails/orderDetails';
 import { EditClient } from '@/features/editClient/editClient';
-import { SignIn } from '@/features/signIn/signIn';
+// import { SignIn } from '@/features/signIn/signIn';
 import ErrorBoundaryRoutes from './errorBoundaryRoute';
 import { ProductsClassifications } from '@/features/products/classifications/Classifications';
 import { EditProduct } from '@/features/products/editProduct/editProduct';
@@ -34,8 +34,8 @@ export const AppRouter = () => {
   return (
     <ErrorBoundaryRoutes>
       <Routes>
-        <Route path='/sign-in' element={<SignIn />} />
-        <Route element={<ProtectedRoute />}>
+        {/* <Route path='/sign-in' element={<SignIn />} /> */}
+        {/* <Route element={<ProtectedRoute />}> */}
           <Route path='/' element={<AppLayout />}>
             <Route index element={<Homepage />} />
             <Route path='deliverymen-logs' element={<DeliveryMenLogs />} />
@@ -80,7 +80,7 @@ export const AppRouter = () => {
             <Route path='reports/deliverymen_reports' element={<DeliveryMenReports />} />
             <Route path='reports/products_reports' element={<ProductsReports />} />
           </Route>
-        </Route>
+        {/* </Route> */}
       </Routes>
     </ErrorBoundaryRoutes>
   );

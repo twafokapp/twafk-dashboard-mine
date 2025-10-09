@@ -15,7 +15,7 @@ export const SidePanel = () => {
 
       <div className=' h-[70%] flex flex-col items-center justify-between mt-20'>
         <div className='flex flex-col gap-10'>
-          <IconBadge icon={<Bell color='white' size={46} className='m-auto' />} count={10} />
+          <IconBadge icon={<Bell color='white' size={46}  className='m-auto' />} count={10} />
           <IconBadge icon={<Cog color='white' size={46} className='m-auto' />} count={3} />
         </div>
         <IconBadge
