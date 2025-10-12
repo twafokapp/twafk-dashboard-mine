@@ -4,7 +4,7 @@ interface AppCardsProps {
 }
 export const AppCards = ({ title, resultAsNumber }: AppCardsProps) => {
     return (
-        <div className="min-w-[181px] min-h-[110px] border-[0.7px] border-[#DFE5F9] rounded-xl ps-[1.25rem] flex flex-col bg-white">
+        <div className="text-primary font-medium min-w-[181px] min-h-[110px] border-[0.7px] border-[#DFE5F9] rounded-xl ps-[1.25rem] flex flex-col bg-white">
 
             <div className="flex flex-col gap-[1.31rem]">
 

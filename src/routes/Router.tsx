@@ -10,7 +10,6 @@ import { Deliverymen } from '@/features/deliveryman/deliverymen';
 import { SingleClient } from '@/features/singleClient/singleClient';
 import { OrderDetails } from '@/features/orderDetails/orderDetails';
 import { Invoice } from '@/features/invoice/invoice';
-import { DeliveryMenLogs } from '@/features/deliveryMenLogs/deliveryMenLogs';
 import { DeliverymanLogDetails } from '@/features/deliverymanLogDetails/deliverymanLogDetails';
 import { DeliverymanRegisterRequestDetails } from '@/features/deliverymanRegisterRequestDetails/deliverymanRegisterRequestDetails';
 import { ClientsReports } from '@/features/clientsReports/clientsReports';
@@ -29,6 +28,30 @@ import { EditClassification } from '@/features/products/editClassification/editC
 import { AddNewProduct } from '@/features/products/addNewProduct/addNewProduct';
 import { AddNewCategory } from '@/features/products/addNewCategory/addNewCategory';
 import { ProtectedRoute } from './ProtectedRoute';
+import { Tasks } from '@/features/tasks/tasks';
+import { PromotionRequests } from '@/features/promotionRequests/promotionRequests';
+import { ConnectionMessages } from '@/features/connectionMessages/connectionMessages';
+import { OrganizationalStructure } from '@/features/organizationalStructure/OrganizationalStructure';
+import { AddEmployee } from '@/features/addEmployee/addEmployee';
+import { AllEmployees } from '@/features/allEmployees/allEmployees';
+import { FingerPrint } from '@/features/fingerPrint/fingerPrint';
+import { ManualAttendance } from '@/features/manualAttendance/manualAttendance';
+import { SettlementRequests } from '@/features/settlementRequests/settlementRequests';
+import { Missions } from '@/features/missions/missions';
+import { ExceptionsRequests } from '@/features/exceptionsRequests/exceptionsRequests';
+import { ExitPermitRequests } from '@/features/exitPermitRequests/exitPermitRequests';
+import { LeaveRequests } from '@/features/leaveRequests/leaveRequests';
+import { CoursesRequests } from '@/features/coursesRequests/coursesRequests';
+import { FinancialReports } from '@/features/financialReports/financialReports';
+import { Salaries } from '@/features/salaries/salaries';
+import { AdvanceRequests } from '@/features/advanceRequests/advanceRequests';
+import { Drinks } from '@/features/drinks/drinks';
+import { Branches } from '@/features/branches/branches';
+import { Companies } from '@/features/companies/companies';
+import { Departments } from '@/features/departments/departments';
+import { Vacations } from '@/features/vacations/vacations';
+import { Notifications } from '@/features/notifications/notifications';
+import { JobTitles } from '@/features/jobTitles/jobTitles';
 
 export const AppRouter = () => {
   return (
@@ -36,50 +59,36 @@ export const AppRouter = () => {
       <Routes>
         {/* <Route path='/sign-in' element={<SignIn />} /> */}
         {/* <Route element={<ProtectedRoute />}> */}
-          <Route path='/' element={<AppLayout />}>
-            <Route index element={<Homepage />} />
-            <Route path='deliverymen-logs' element={<DeliveryMenLogs />} />
-            <Route
-              path='/deliverymen/deliveryman-log-details'
-              element={<DeliverymanLogDetails />}
-            />
-            <Route
-              path='/deliverymen/deliveryman-register-request-details'
-              element={<DeliverymanRegisterRequestDetails />}
-            />
-            <Route path='*' element={<>404</>} />
-            <Route path='clients' element={<Clients />} />
-            <Route path='/clients/:clientId' element={<SingleClient />} />
-            <Route path='clients/order/:orderId' element={<SingleOrder />} />
-            <Route path='invoice' element={<Invoice />} />
-            <Route path='/products-orders' element={<ProductsOrders />} />
-            <Route path='/products-orders/order-details' element={<OrderDetails />} />
-            <Route path='shipment-management' element={<ShipsManagement />} />
-            <Route path='shipment-management/:shipmentId' element={<ShipmentDetails />} />
-            <Route path='deliverymen' element={<Deliverymen />} />
-            <Route path='/products' element={<Products />} />
-            <Route
-              path='/products/products-management/edit-product/:productId'
-              element={<EditProduct />}
-            />
-            <Route
-              path='/products/products-classifications'
-              element={<ProductsClassifications />}
-            />
-            <Route
-              path='/products/products-management/edit-classification/:classificationId'
-              element={<EditClassification />}
-            />
-            <Route path='/products/add-new-product' element={<AddNewProduct />} />
-            <Route path='/products/add-new-category' element={<AddNewCategory />} />
-            <Route path='reports' element={<Reports />} />
-            <Route path='/reports/edit-client/:clientId' element={<EditClient />} />
-            <Route path='settings' element={<SettingsPage />} />
-            <Route path='reports/clients_reports' element={<ClientsReports />} />
-            <Route path='reports/shipments_reports' element={<ShipmentsReports />} />
-            <Route path='reports/deliverymen_reports' element={<DeliveryMenReports />} />
-            <Route path='reports/products_reports' element={<ProductsReports />} />
-          </Route>
+        <Route path='/' element={<AppLayout />}>
+          <Route path='*' element={<>404</>} />
+          <Route index element={<Homepage />} />
+          <Route path='tasks' element={<Tasks />} />
+          <Route path='/promotion-requests' element={<PromotionRequests />} />
+          <Route path='/connection-messages' element={<ConnectionMessages />} />
+          <Route path='/organizational-structure' element={<OrganizationalStructure />} />
+          <Route path='/add-employee' element={<AddEmployee />} />
+          <Route path='/all-employees' element={<AllEmployees />} />
+          <Route path='/reports' element={<Reports />} />
+          <Route path='/finger-print' element={<FingerPrint />} />
+          <Route path='/manual-attendance' element={<ManualAttendance />} />
+          <Route path='/settlement-requests' element={<SettlementRequests />} />
+          <Route path='/missions' element={<Missions />} />
+          <Route path='/exceptions-requests' element={<ExceptionsRequests />} />
+          <Route path='/exit-permit-requests' element={<ExitPermitRequests />} />
+          <Route path='/leave-requests' element={<LeaveRequests />} />
+          <Route path='/courses-requests' element={<CoursesRequests />} />
+          <Route path='/financial-reports' element={<FinancialReports />} />
+          <Route path='/salaries' element={<Salaries />} />
+          <Route path='/advance-requests' element={<AdvanceRequests />} />
+
+          <Route path='/drinks' element={<Drinks />} />
+          <Route path='/branches' element={<Branches />} />
+          <Route path='/companies' element={<Companies />} />
+          <Route path='/departments' element={<Departments />} />
+          <Route path='/vacations' element={<Vacations />} />
+          <Route path='/notifications' element={<Notifications />} />
+          <Route path='/job-titles' element={<JobTitles />} />
+        </Route>
         {/* </Route> */}
       </Routes>
     </ErrorBoundaryRoutes>

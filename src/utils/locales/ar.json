@@ -38,7 +38,7 @@
     "exit_permit_requests":"طلبات تصريح الخروج",
     "leave_requests":"طلبات الإجازات",
     "courses_requests":"طلبات الدورات التدريبية",
-    "financial_management":"طلبات الدورات التدريبية",
+    "financial_management":"الإدارة المالية",
     "financial_reports":"التقارير المالية",
     "salaries":"الرواتب",
     "advance_requests":"طلبات السلف",
@@ -47,7 +47,7 @@
     "general_settings":"الإعدادات العامة",
     "branches":"الفروع",
     "companies":"الشركات",
-    "sections":"الأقسام",
+    "departments":"الأقسام",
     "vacations":"الإجازات",
     "notifications":"التنبيهات",
     "job_titles":"المسميات الوظيفية"

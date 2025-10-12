@@ -55,47 +55,47 @@ export const items = [
 ];
 
 export const adminSettings = [
-  { id: 'data', title: 'mainSidebar.dashboard', url: '/', icon: ShieldUser },
-  { id: 'tasks', title: 'mainSidebar.tasks', url: '/tasks', icon: ClipboardList },
-  { id: 'promotion', title: 'mainSidebar.pormotion_requests', url: '/promotion', icon: UserRoundCog },
-  { id: 'social', title: 'mainSidebar.connection_messages', url: '/social-mails', icon: Mail },
-  { id: 'Org', title: 'mainSidebar.organiztional_structure', url: '/organizational-structure', icon: Mail },
+  { id: 'dashboard', title: 'mainSidebar.dashboard', url: '/', icon: ShieldUser,count: 0 },
+  { id: 'tasks', title: 'mainSidebar.tasks', url: '/tasks', icon: ClipboardList,count: 5 },
+  { id: 'pormotion_requests', title: 'mainSidebar.pormotion_requests', url: '/promotion-requests', icon: UserRoundCog, count: 2 },
+  { id: 'connection_messages', title: 'mainSidebar.connection_messages', url: '/Connection-messages', icon: Mail, count: 8 },
+  { id: 'organiztional_structure', title: 'mainSidebar.organiztional_structure', url: '/organizational-structure', icon: Mail, count: 3 },
 ]
 
 
 export const humanResources = [
-  { id: 'data', title: 'mainSidebar.add_emplyee', url: '/', icon: UserRoundPlus },
-  { id: 'tasks', title: 'mainSidebar.all_employees', url: '/tasks', icon: Users },
-  { id: 'promotion', title: 'mainSidebar.reports', url: '/promotion', icon: FileText },
-  { id: 'social', title: 'mainSidebar.finger_print', url: '/social-mails', icon: Fingerprint },
-  { id: 'Org', title: 'mainSidebar.manual_attendance', url: '/organizational-structure', icon: Pencil },
-  { id: 'Org', title: 'mainSidebar.settlement_requests', url: '/organizational-structure', icon: NotebookPen },
+  { id: 'add_emplyee', title: 'mainSidebar.add_emplyee', url: '/add-employee', icon: UserRoundPlus, count: 12 },
+  { id: 'all_employees', title: 'mainSidebar.all_employees', url: '/all-employees', icon: Users, count: 0 },
+  { id: 'reports', title: 'mainSidebar.reports', url: '/reports', icon: FileText, count: 0 },
+  { id: 'finger_print', title: 'mainSidebar.finger_print', url: '/finger-print', icon: Fingerprint, count: 3 },
+  { id: 'manual_attendance', title: 'mainSidebar.manual_attendance', url: '/manual-attendance', icon: Pencil, count: 8 },
+  { id: 'settlement_requests', title: 'mainSidebar.settlement_requests', url: '/settlement-requests', icon: NotebookPen, count: 1 },
 ]
 
 
 export const PermitsAndAuthorizations = [
-  { id: 'data', title: 'mainSidebar.add_emplyee', url: '/', icon: Share2 },
-  { id: 'tasks', title: 'mainSidebar.all_employees', url: '/tasks', icon: ShieldX },
-  { id: 'promotion', title: 'mainSidebar.reports', url: '/promotion', icon: DoorOpen },
-  { id: 'social', title: 'mainSidebar.finger_print', url: '/social-mails', icon: Plane },
-  { id: 'Org', title: 'mainSidebar.manual_attendance', url: '/organizational-structure', icon: GraduationCap },
+  { id: 'data', title: 'mainSidebar.missions', url: '/missions', icon: Share2, count: 0 },
+  { id: 'tasks', title: 'mainSidebar.exceptions_requests', url: '/exceptions-requests', icon: ShieldX, count: 10 },
+  { id: 'promotion', title: 'mainSidebar.exit_permit_requests', url: '/exit-permit-requests', icon: DoorOpen, count: 2 },
+  { id: 'social', title: 'mainSidebar.leave_requests', url: '/leave-requests', icon: Plane, count: 1 },
+  { id: 'Org', title: 'mainSidebar.courses_requests', url: '/courses-requests', icon: GraduationCap, count: 0 },
 ]
 
 export const fincinalMangement = [
-  { id: 'data', title: 'mainSidebar.financial_reports', url: '/', icon: Share2 },
-  { id: 'tasks', title: 'mainSidebar.salaries', url: '/tasks', icon: ShieldX },
-  { id: 'promotion', title: 'mainSidebar.advance_requests', url: '/promotion', icon: DoorOpen },
+  { id: 'data', title: 'mainSidebar.financial_reports', url: '/financial-reports', icon: Share2, count: 3 },
+  { id: 'tasks', title: 'mainSidebar.salaries', url: '/salaries', icon: ShieldX, count: 16 },
+  { id: 'promotion', title: 'mainSidebar.advance_requests', url: '/advance-requests', icon: DoorOpen, count: 4 },
 ]
 
 export const buffetAndServices = [
-  { id: 'data', title: 'mainSidebar.drinks', url: '/', icon: Share2 },
+  { id: 'data', title: 'mainSidebar.drinks', url: '/drinks', icon: Share2, count: 6 },
 ]
 
 export const generalSettings = [
-  { id: 'data', title: 'mainSidebar.branches', url: '/', icon: Share2 },
-  { id: 'data', title: 'mainSidebar.companies', url: '/', icon: Share2 },
-  { id: 'data', title: 'mainSidebar.sections', url: '/', icon: Share2 },
-  { id: 'data', title: 'mainSidebar.vacations', url: '/', icon: Share2 },
-  { id: 'data', title: 'mainSidebar.notifications', url: '/', icon: Share2 },
-  { id: 'data', title: 'mainSidebar.job_titles', url: '/', icon: Share2 },
+  { id: 'data', title: 'mainSidebar.branches', url: '/branches', icon: Share2, count: 0 },
+  { id: 'data', title: 'mainSidebar.companies', url: '/companies', icon: Share2, count: 2 },
+  { id: 'data', title: 'mainSidebar.departments', url: '/departments', icon: Share2,  count: 3 },
+  { id: 'data', title: 'mainSidebar.vacations', url: '/vacations', icon: Share2, count: 5 },
+  { id: 'data', title: 'mainSidebar.notifications', url: '/notifications', icon: Share2, count: 7 },
+  { id: 'data', title: 'mainSidebar.job_titles', url: '/job-titles', icon: Share2, count: 0 },
 ]
