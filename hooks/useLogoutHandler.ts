@@ -1,7 +1,7 @@
+import { logOut } from './../src/store/authSlice';
+import { appToast } from './../src/lib/toast/toast';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { logOut } from '@/store/authSlice';
-import { appToast } from '@/lib/toast/toast';
 
 export const useLogoutHandler = () => {
   const dispatch = useDispatch();

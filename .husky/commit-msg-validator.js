@@ -21,7 +21,7 @@ try {
   console.log('\n');
   console.log('Your commit message: "' + commitMsg + '"');
   console.log('\n');
-  console.log('=== Nakhdemak Commit Message Guidelines ===');
+  console.log('=== Twafok Commit Message Guidelines ===');
   console.log('Commit messages must follow this format:');
   console.log('  <type>: <description>');
   console.log('\n');
